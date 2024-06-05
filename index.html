@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <head>
     <title>Formulario de Consolas</title>
-    <link href="/styles.css">
+    <link rel="stylesheet" href="/stylesheet/styles.css">
 </head>
 <html>
     <body>
         <h1>Videojuegos</h1>
         <br>
         <form>
+        <div class = "contenedor">
             <la>Videojuego favorito:</la>
             <input type="text" id="juego" name="juego_fav" placeholder="Escriba su juego favorito"><br>
             <br>
-            <div class="consola_fav">
                 <p>Consola favorita actual</p>
                 <input type="radio" id="ps5" name="consola_fav" value="ps5">
                 <label for="ps5">PS5</label>
                 <input type="radio" id="xbox" name="consola_fav" value="xbox">
-                <label for="xbox">Xbox Series X/S</label> <br>
+                <label for="xbox">Xbox Series X/S</label> 
+                <div>
                 <input type="radio" id="switch" name="consola_fav" value="switch">
                 <label for="switch">Switch</label>
                 <input type="radio" id="pc" name="consola_fav" value="pc">
-                <label for="pc">Pc</label> <br>
+                <label for="pc">Pc</label> 
                 <input type="radio" id="otro" name="consola_fav" value="otro">
-                <label for="otro">Otro</label> <br>
-            </div>
+                <label for="otro">Otro</label> 
+                </div>
+                
             <br>
             <div class="checkbox">
                 <p>¿En dónde has jugado?</p>
@@ -45,6 +47,7 @@
             </div>
             <br>
             <button type="submit">Enviar respuesta</button>
-        </form>
+            </form>
+        </div>
     </body>
 </html>
